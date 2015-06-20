@@ -3,3 +3,39 @@
 /* Note: an asteroid image is included in this repo.
 Feel free to use it if you like. */
 
+body{
+  font-family: 'Arial';
+  background-color: rgb(223, 223, 223);
+}
+
+.gameBoard{
+  border: 1px solid silver;
+  border-radius: 5px;
+}
+
+.scoreboard{
+  background-color: rgb(255, 255, 255);
+  width: 150px;
+  padding: 10px;
+  margin-left : 5px;
+  margin-bottom: 10px;
+  border-radius: 2px;
+}
+
+
+.enemy{
+  animation-name: rotate;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg) scale(0.25);
+    }
+    to {
+        transform: rotate(360deg) scale(0.25);
+    }
+}
